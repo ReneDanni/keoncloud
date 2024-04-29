@@ -32,13 +32,15 @@ async function login() {
 
 function cycleContainers (objs, timer) {
     objs.style.display = 'none';
-    do {
-        for (let i in objs) {
-            let obj = objs[i]
-            obj.style.display = '';
-            setTimeout(_=> obj.style.display = 'none', timer)
-        }
-    } while (1=1)
+
+    for (let i in objs) {
+        let obj = objs[i]
+        obj.style.display = '';
+        setTimeout(_=> obj.style.display = 'none', timer)
+        if (objs.length == i -1)
+            i = 0
+    }
+
 }
 
 login().then(() => {
