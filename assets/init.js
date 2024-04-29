@@ -59,7 +59,7 @@ login().then(() => {
             $( '#popup' ).hide();
         } );
     
-    const containers = document.getElementsByClassName("flex-container");
+    
     var app = qlik.openApp( '5bcf0d11-0e62-4e55-8942-8edea5c1c15c', config );
     var app2 = qlik.openApp( '7c98b376-3b4d-451d-ac92-7d549ec9e5e0', config );
     
@@ -87,6 +87,7 @@ login().then(() => {
     
     } );
 
+    const containers = document.getElementsByClassName("flex-container");
     cycleContainers (containers, 15000);
     
 });
