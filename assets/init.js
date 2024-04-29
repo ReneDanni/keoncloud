@@ -31,7 +31,7 @@ async function login() {
 }
 
 function cycleContainers (objs, timer) {
-    objs.style.display = 'none';
+    //objs.style.display = 'none';
 
     for (let i in objs) {
         let obj = objs[i]
