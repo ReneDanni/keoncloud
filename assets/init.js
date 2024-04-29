@@ -49,7 +49,7 @@ login().then(() => {
     var app = qlik.openApp( '5bcf0d11-0e62-4e55-8942-8edea5c1c15c', config );
     var app2 = qlik.openApp( '7c98b376-3b4d-451d-ac92-7d549ec9e5e0', config );
     
-    app.visualization.get('PZZwr').then((vis)=>{
+    app2.visualization.get('PZZwr').then((vis)=>{
         vis.show("QV00");
     });
     app.visualization.get('b349a54a-28c2-4806-8380-1b4153e047ba').then((vis)=>{
