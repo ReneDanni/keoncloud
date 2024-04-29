@@ -74,15 +74,15 @@ login().then(() => {
     } );
 
     const containers = document.getElementsByClassName("flex-container")
-    let n = 5000
+    let n = 15000
     for (let i in containers) {
         let container = containers[i];
         container.style.display = "none";
         setTimeout(_=> {
             container.style.display = "";
-            setTimeout(_=> container.style.display = "none", 5000);
+            setTimeout(_=> container.style.display = "none", 15000);
         }, n);
-        n += 55000
+        n += 15000
     }
 
 });
