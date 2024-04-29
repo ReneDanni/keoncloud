@@ -35,7 +35,7 @@ function cycleContainers (objs, timer) {
     do {
         for (let i in objs) {
             let obj = objs[i]
-            obj.style.display = 'initial';
+            obj.style.display = '';
             setTimeout(_=> obj.style.display = 'none', timer)
         }
     } while (1=1)
