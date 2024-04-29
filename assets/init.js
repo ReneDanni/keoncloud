@@ -73,4 +73,16 @@ login().then(() => {
     
     } );
 
+    const containers = document.getElementsByClassName("flex-container")
+    let n = 500
+    for (let i in containers) {
+        let container = containers[i];
+        container.style.display = "none";
+        setTimeout(_=> {
+            container.style.display = "";
+            setTimeout(_=> container.style.display = "none", 5000);
+        }, n);
+        n += 5500
+    }
+
 });
