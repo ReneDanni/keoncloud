@@ -46,26 +46,31 @@ login().then(() => {
             $( '#popup' ).hide();
         } );
     
-    var app = qlik.openApp( '90becbaf-b1cd-4bbd-9054-4621f076b30a', config );
+    var app = qlik.openApp( '5bcf0d11-0e62-4e55-8942-8edea5c1c15c', config );
+    var app2 = qlik.openApp( '7c98b376-3b4d-451d-ac92-7d549ec9e5e0', config );
     
-    app.visualization.get('hJpbnN').then((vis)=>{
+    app.visualization.get('PZZwr').then((vis)=>{
+        vis.show("QV00");
+    });
+    app.visualization.get('b349a54a-28c2-4806-8380-1b4153e047ba').then((vis)=>{
         vis.show("QV01");
     } );
-    app.visualization.get('wMds').then((vis)=>{
+    app.visualization.get('65abf815-1035-4a4f-9562-29a5ad2e76ef').then((vis)=>{
         vis.show("QV02");
     } );
-    app.visualization.get('rVWkeP').then((vis)=>{
+    app.visualization.get('a47efe3b-0f14-4318-aa8a-711faf5f714a').then((vis)=>{
         vis.show("QV03");
     } );
-    app.visualization.get('PscKGAnd').then((vis)=>{
+    app.visualization.get('b5370f15-a1e0-4507-b788-257db35c8993').then((vis)=>{
         vis.show("QV04");
     } );
-    app.visualization.get('KjbgkTB').then((vis)=>{
+    app.visualization.get('vRcprF').then((vis)=>{
         vis.show("QV05");
     } );
-    app.visualization.get('mhTTMJ').then((vis)=>{
+    app.visualization.get('921f6a3e-24e8-40bb-9152-621d5e232fac').then((vis)=>{
         vis.show("QV06");
     } );
     
     } );
+
 });
