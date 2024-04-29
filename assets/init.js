@@ -30,10 +30,10 @@ async function login() {
     });
 }
 
-function cycleContainers (objs, timer) {
+async function cycleContainers (objs, timer) {
     objs.style.display = 'none';
     console.log(objs);
-    /*
+    
     for (let i in objs) {
         let obj = objs[i]
         obj.style.display = '';
@@ -41,7 +41,7 @@ function cycleContainers (objs, timer) {
         if (objs.length == i -1)
             i = 0
     }
-    */
+    
 
 }
 
