@@ -90,9 +90,6 @@ login().then(() => {
               "qDef": {
                 "qFieldDefs": [
                   "Status Pedido"
-                ],
-                "qFieldLabels": [
-                  "Status Pedido"
                 ]
               }
             },
