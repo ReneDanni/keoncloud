@@ -80,17 +80,36 @@ login().then(() => {
     app.visualization.get('b5370f15-a1e0-4507-b788-257db35c8993').then((vis)=>{
         vis.show("QV04");
     } );
-    app.visualization.get('vRcprF').then((vis)=>{
+    /*app.visualization.get('vRcprF').then((vis)=>{
         vis.show("QV05");
-    } );
-    app.visualization.get('921f6a3e-24e8-40bb-9152-621d5e232fac').then((vis)=>{
+    } );*/
+    app.visualization.create(
+        'piechart',
+        [
+            {
+              "qDef": {
+                "qFieldDefs": [
+                  "Status Pedido"
+                ],
+                "qFieldLabels": [
+                  "Status Pedido"
+                ]
+              }
+            },
+            "=count(distinct [%Chave Pedido])"
+          ],
+        {}
+      ).then((vis)=>{vis.show("QV05");
+    });
+    
+     app.visualization.get('921f6a3e-24e8-40bb-9152-621d5e232fac').then((vis)=>{
         vis.show("QV06");
     } );
     
     } );
 
     const containers = document.getElementsByClassName("flex-container");
-    cycleContainers (containers, 15000);
+    //cycleContainers (containers, 15000);
     
 });
 
